@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carolina Teixeira Portfolio</title>
+  <link rel="stylesheet" href="style.css?v=1.1" />
+</head>
+<body>
+<div class="pagina">
+
+  <p class="nav-nome">Carolina Teixeira</p>
+
+  <nav class="nav-links">
+    <a class="nav-link" href="#about">About</a>
+
+    <span class="nav-projects-wrap">
+      <button type="button" class="nav-projects-btn" id="projectsBtn" onclick="toggleDropdown(event)">Projects</button>
+      <div class="nav-dropdown" id="projectsDropdown">
+        <button type="button" class="nav-dropdown-item active" onclick="filterProjects('all', this)">All</button>
+        <button type="button" class="nav-dropdown-item" onclick="filterProjects('Photography', this)">Photography</button>
+        <button type="button" class="nav-dropdown-item" onclick="filterProjects('Graphic Design', this)">Graphic Design</button>
+        <button type="button" class="nav-dropdown-item" onclick="filterProjects('Video', this)">Video</button>
+        <button type="button" class="nav-dropdown-item" onclick="filterProjects('Product Design', this)">Product Design</button>
+        <button type="button" class="nav-dropdown-item" onclick="filterProjects('Visual Arts', this)">Visual Arts</button>
+      </div>
+    </span>
+
+    <a class="nav-link" href="#contact">Contact</a>
+  </nav>
+
+  <h1 class="hero-titulo">DESIGN<br>PORTFOLIO</h1>
+  <p class="hero-escola">Faculdade de Arquitetura da Universidade de Lisboa</p>
+  <a class="btn" href="#projects"></a>
+
+  <div class="projects-grid" id="projects">
+
+    <a class="card-link wide video-card" href="victoria-video.html" data-cat="Video">
+      <video class="card-img" autoplay muted loop playsinline>
+        <source src="victoria-video-small.mp4" type="video/mp4" />
+      </video>
+      <span class="card-titulo">Victoria Video</span>
+      <span class="card-cat">Video</span>
+    </a>
+
+    <a class="card-link portrait" href="sports.html" data-cat="Photography">
+      <img class="card-img" src="sports.jpg" alt="Sports" />
+      <span class="card-titulo">Sports</span>
+      <span class="card-cat">Photography</span>
+    </a>
+
+    <a class="card-link wide" href="loquor.html" data-cat="Graphic Design">
+      <img class="card-img" src="loquor.jpg" alt="Loquor" />
+      <span class="card-titulo">Loquor</span>
+      <span class="card-cat">Graphic Design</span>
+    </a>
+
+    <a class="card-link portrait" href="objeto-luminoso.html" data-cat="Product Design">
+      <img class="card-img" src="objeto-luminoso.jpg" alt="Objeto Luminoso" />
+      <span class="card-titulo">Objeto Luminoso</span>
+      <span class="card-cat">Product Design</span>
+    </a>
+
+    <a class="card-link wide video-card" href="nyc-video.html" data-cat="Video">
+      <video class="card-img" autoplay muted loop playsinline>
+        <source src="nyc-video-small.mp4" type="video/mp4" />
+      </video>
+      <span class="card-titulo">NYC Video</span>
+      <span class="card-cat">Video</span>
+    </a>
+
+    <a class="card-link portrait" href="portraits.html" data-cat="Photography">
+      <img class="card-img" src="portraits.jpg" alt="Portraits" />
+      <span class="card-titulo">Portraits</span>
+      <span class="card-cat">Photography</span>
+    </a>
+
+    <a class="card-link portrait" href="wallows-poster.html" data-cat="Graphic Design">
+      <img class="card-img" src="wallows-poster.jpg" alt="Wallows Poster" />
+      <span class="card-titulo">Wallows Poster</span>
+      <span class="card-cat">Graphic Design</span>
+    </a>
+
+    <a class="card-link portrait" href="city.html" data-cat="Photography">
+      <img class="card-img" src="city.jpg" alt="City" />
+      <span class="card-titulo">City</span>
+      <span class="card-cat">Photography</span>
+    </a>
+
+    <a class="card-link portrait" href="eames-poster.html" data-cat="Graphic Design">
+      <img class="card-img" src="eames-poster.jpg" alt="Eames Poster" />
+      <span class="card-titulo">Eames Poster</span>
+      <span class="card-cat">Graphic Design</span>
+    </a>
+
+    <a class="card-link wide video-card" href="shortfilm.html" data-cat="Video">
+      <video class="card-img" autoplay muted loop playsinline>
+        <source src="shortfilm-small.mp4" type="video/mp4" />
+      </video>
+      <span class="card-titulo">Shortfilm — Through the Painting</span>
+      <span class="card-cat">Video</span>
+    </a>
+
+    <a class="card-link wide video-card" href="madrid-video.html" data-cat="Video">
+      <video class="card-img" autoplay muted loop playsinline>
+        <source src="madrid-video-small.mp4" type="video/mp4" />
+      </video>
+      <span class="card-titulo">Madrid Video</span>
+      <span class="card-cat">Video</span>
+    </a>
+
+    <a class="card-link portrait" href="wild.html" data-cat="Photography">
+      <img class="card-img" src="wild.jpg" alt="Wild" />
+      <span class="card-titulo">Wild</span>
+      <span class="card-cat">Photography</span>
+    </a>
+
+    <a class="card-link portrait" href="mobile.html" data-cat="Product Design">
+      <img class="card-img" src="mobile.jpg" alt="Mobile" />
+      <span class="card-titulo">Mobile</span>
+      <span class="card-cat">Product Design</span>
+    </a>
+
+    <a class="card-link portrait" href="victoria-painting.html" data-cat="Visual Arts">
+      <img class="card-img" src="victoria-painting.jpg" alt="Victoria Painting" />
+      <span class="card-titulo">Victoria Painting</span>
+      <span class="card-cat">Visual Arts</span>
+    </a>
+
+    <a class="card-link wide no-crop" href="the-red-carpet.html" data-cat="Visual Arts">
+      <img class="card-img" src="the-red-carpet.jpg" alt="The Red Carpet" />
+      <span class="card-titulo">The Red Carpet</span>
+      <span class="card-cat">Visual Arts</span>
+    </a>
+
+    <a class="card-link portrait" href="portraits-visual-arts.html" data-cat="Visual Arts">
+      <img class="card-img" src="portraits-visual-arts.jpg" alt="Portraits Visual Arts" />
+      <span class="card-titulo">Portraits</span>
+      <span class="card-cat">Visual Arts</span>
+    </a>
+
+    <a class="card-link portrait" href="paula-rego.html" data-cat="Visual Arts">
+      <img class="card-img" src="paula-rego.jpg" alt="Paula Rego" />
+      <span class="card-titulo">Paula Rego</span>
+      <span class="card-cat">Visual Arts</span>
+    </a>
+
+    <a class="card-link portrait" href="unique-works.html" data-cat="Visual Arts">
+      <img class="card-img" src="unique-works.jpg" alt="Unique Works" />
+      <span class="card-titulo">Unique Works</span>
+      <span class="card-cat">Visual Arts</span>
+    </a>
+
+    <a class="card-link wide video-card" href="shortfilm-generic.html" data-cat="Video">
+      <video class="card-img" autoplay muted loop playsinline>
+        <source src="shortfilm-generic-small.mp4" type="video/mp4" />
+      </video>
+      <span class="card-titulo">Shortfilm Generic</span>
+      <span class="card-cat">Video</span>
+    </a>
+
+    <!-- Odem — Visual Arts -->
+    <a class="card-link wide" href="odem.html" data-cat="Visual Arts">
+      <img class="card-img" src="odem.jpg" alt="Odem" />
+      <span class="card-titulo">Odem</span>
+      <span class="card-cat">Visual Arts</span>
+    </a>
+
+  </div>
+
+  <section class="about-section" id="about">
+    <div class="about-header">
+      <span class="about-label">About Me</span>
+      <h2 class="about-headline">CAROLINA<br>TEIXEIRA</h2>
+    </div>
+    <div class="about-body">
+      <div class="about-foto-wrap">
+        <img class="about-foto" src="fotoperfil.png" alt="Carolina Teixeira" />
+      </div>
+      <div class="about-content">
+        <p class="about-texto">
+          I am a 19-year-old designer currently studying at the Faculty of Architecture, focused on the intersection of graphic design and video. Driven by a deep passion for sports, my ultimate goal is to merge dynamic visual storytelling with the world of football. I dream of creating impactful advertising for Nike, working alongside the world's most legendary athletes to redefine the game's energy.
+        </p>
+        <div class="about-tagline">
+          <span class="about-tagline-item"><span>→</span> Graphic Design</span>
+          <span class="about-tagline-item"><span>→</span> Video</span>
+          <span class="about-tagline-item"><span>→</span> Photography</span>
+          <span class="about-tagline-item"><span>→</span> Product Design</span>
+          <span class="about-tagline-item"><span>→</span> Visual Arts</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <h2 class="section-titulo" id="contact">Contact</h2>
+  <p class="contact-texto">Reach me here:</p>
+  <a class="contact-link" href="mailto:cpteixeira717@gmail.com">cpteixeira717@gmail.com</a>
+  <a class="contact-link" href="https://www.instagram.com/carolinateixeira.__/" target="_blank">Instagram</a>
+   <a class="contact-link" href="https://open.spotify.com/user/3hcewgwadx8othwbcvl7pu7bs?si=7f524d6a9f4c404a" target="_blank">Spotify</a>
+
+  <p class="footer-texto">© 2026 Carolina Teixeira</p>
+</div>
+
+<script>
+  function toggleDropdown(event) {
+    event.stopPropagation();
+    const btn = document.getElementById("projectsBtn");
+    const dropdown = document.getElementById("projectsDropdown");
+    dropdown.classList.toggle("open");
+    btn.classList.toggle("open");
+  }
+
+  document.addEventListener("click", function (e) {
+    const wrap = document.querySelector(".nav-projects-wrap");
+    if (!wrap.contains(e.target)) {
+      document.getElementById("projectsDropdown").classList.remove("open");
+      document.getElementById("projectsBtn").classList.remove("open");
+    }
+  });
+
+  function filterProjects(cat, btn) {
+    document.querySelectorAll(".nav-dropdown-item").forEach((b) => b.classList.remove("active"));
+    btn.classList.add("active");
+
+    document.querySelectorAll(".card-link").forEach((card) => {
+      if (cat === "all" || card.dataset.cat === cat) {
+        card.classList.remove("hidden");
+      } else {
+        card.classList.add("hidden");
+      }
+    });
+
+    document.getElementById("projectsDropdown").classList.remove("open");
+    document.getElementById("projectsBtn").classList.remove("open");
+    document.getElementById("projects").scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+</script>
+</body>
+</html>
